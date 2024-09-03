@@ -13,8 +13,7 @@ class User(Base):
     name = Column(String(255))
     created_at = Column(DateTime, default=datetime.utcnow)
 
-    # Define a one-to-one relationship with Account
-    # account = relationship("Account", uselist=False, back_populates="user", cascade="all, delete-orphan", passive_deletes=True)
+    accounts = relationship("Account", back_populates="user")
 
     #  Define relationships for trades
     # bought_trades = relationship("Trade", foreign_keys="Trade.buyer_id", back_populates="buyer")

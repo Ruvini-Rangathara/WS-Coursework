@@ -1,6 +1,8 @@
 # pip install Flask
 from flask import Flask
 from controller.auth_controller import auth_blueprint
+from controller.account_controller import account_blueprint
+from controller.trade_controller import trade_blueprint
 from database import engine, Base
 
 app = Flask(__name__)
@@ -12,6 +14,8 @@ def home():
 
 
 app.register_blueprint(auth_blueprint, url_prefix='/auth')
+app.register_blueprint(account_blueprint, url_prefix='/account')
+app.register_blueprint(trade_blueprint, url_prefix='/trade')
 
 # Create all tables
 Base.metadata.create_all(bind=engine)
