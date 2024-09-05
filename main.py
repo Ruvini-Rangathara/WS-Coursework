@@ -25,7 +25,7 @@ if __name__ == '__main__':
 # app.run(debug=True, port=8081)
 
 # sudo docker pull python
-# sudo docker build -t class3 .   # class3 kiyanne kamathi namak
-# docker run -p 5000:5000 class3
-# docker build -t my-app:latest --no-cache .
+# sudo docker build -t ws-app .
+# sudo docker run -p 5000:5000 ws-app
+# docker build -t ws-app:latest --no-cache .
 # https://hub.docker.com/_/python
