@@ -9,3 +9,8 @@ Flask-RESTful==0.3.9
 Flask-Cors==3.0.10
 mysqlclient
 passlib
+
+# Unit Testing Dependencies
+pytest==7.4.0
+pytest-cov==4.1.0
+coverage==7.3.1

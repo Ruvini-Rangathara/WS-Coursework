@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app-blue       # Deployment name for blue version
+  labels:
+    app: flask-app-blue
+spec:
+  replicas: 2                # Number of pod replicas
+  selector:
+    matchLabels:
+      app: flask-app-blue    # Selector that matches blue version pods
+  template:
+    metadata:
+      labels:
+        app: flask-app-blue
+    spec:
+      containers:
+        - name: flask-app-container
+          image: ruvini925/ws-coursework-web:latest  # Replace with your Docker image
+          ports:
+            - containerPort: 5000                  # Port exposed by your Flask app
+      imagePullSecrets:
+        - name: regcred  # Name of the Docker registry secret

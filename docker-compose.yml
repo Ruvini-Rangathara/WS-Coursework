@@ -14,7 +14,7 @@ services:
 
   web:
     build: .
-    container_name: ws-app
+    container_name: ws-coursework-web
     ports:
       - "5000:5000"
     depends_on:
