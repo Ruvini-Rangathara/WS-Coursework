@@ -38,8 +38,8 @@ jobs:
       - name: Build Docker Image
         run: docker build -t ruvini925/ws-coursework-web .
 
-      - name: Push to DockerHub
+      - name: Log in to Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      - name: Push Docker Image
         run: docker push ruvini925/ws-coursework-web
-        env:
-          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
