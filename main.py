@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return '<h1>Hello world test3</h1>'
+    return '<h1>Hello world test4</h1>'
 
 
 app.register_blueprint(auth_blueprint, url_prefix='/auth')
