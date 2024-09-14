@@ -74,7 +74,7 @@ This project forms the basis for the ITS 2140 coursework, where key concepts of 
 **Overview**: The deployment is managed through Kubernetes, leveraging multiple environments for development, testing, and production.
 
 ### Deployment Diagram:
-- ![Deployment Diagram](path/to/deployment-diagram.png)
+- ![Deployment Diagram](asset/solution-architecture-diagram.png)
 
 ### Deployment Strategy:
 - **Kubernetes Cluster**: Hosted on a cloud provider (AWS/GCloud/Azure) to ensure scalability.
@@ -85,10 +85,11 @@ This project forms the basis for the ITS 2140 coursework, where key concepts of 
 ---
 
 ## 4. CI/CD Pipeline
+- ![CI/CD Pipeline Diagram](asset/ci-cd.png)
 **Overview**: The CI/CD pipeline automates the build, test, and deployment process, ensuring rapid iteration and reliable deployments.
 
 ### Pipeline Architecture:
-- ![CI/CD Pipeline Diagram](path/to/cicd-pipeline-diagram.png)
+- ![CI/CD Pipeline Diagram](asset/ci-cd-pipeline.png)
 
 ### CI/CD Process Description:
 - **Source Control**: Hosted on GitHub.
@@ -147,6 +148,6 @@ This project forms the basis for the ITS 2140 coursework, where key concepts of 
 ---
 
 ### Appendices
-- **CI/CD Pipeline YAML**: Provide the complete CI/CD pipeline configuration (e.g., Jenkinsfile or GitHub Actions YAML).
+- **CI/CD Pipeline YAML**: Provide the complete CI/CD pipeline configuration (e.g.GitHub Actions YAML).
 - **Kubernetes Deployment YAMLs**: Include the YAML files used to deploy the services.
 - **RunBook Instructions**: Step-by-step guide to deploy and test the services.
