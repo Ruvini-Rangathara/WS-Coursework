@@ -24,7 +24,6 @@ services:
       - DB_USER=root
       - DB_PASSWORD=1234
       - DB_NAME=ws-db
-    command: bash -c "sleep 10 && flask run --host=0.0.0.0"
 
 volumes:
   db_data:
