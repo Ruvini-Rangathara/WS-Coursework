@@ -32,7 +32,7 @@ This project forms the basis for the ITS 2140 coursework, where key concepts of 
 **Overview**: The designed solution consists of containerized microservices deployed in a Kubernetes cluster. Each service represents a distinct functionality within the Coinbase exchange, ensuring high availability and scalability.
 
 ### Solution Diagram:
-- ![Solution Diagram](path/to/solution-diagram.png)
+- ![Solution Diagram](asset/solution-architecture-diagram.png)
 - A diagram showing microservices interactions, request flows, and data flows.
 
 ### Service Components:
@@ -73,8 +73,9 @@ This project forms the basis for the ITS 2140 coursework, where key concepts of 
 ## 3. Deployment Architecture
 **Overview**: The deployment is managed through Kubernetes, leveraging multiple environments for development, testing, and production.
 
-### Deployment Diagram:
-- ![Deployment Diagram](asset/solution-architecture-diagram.png)
+[//]: # (### Deployment Diagram:)
+
+[//]: # (- ![Deployment Diagram]&#40;asset/solution-architecture-diagram.png&#41;)
 
 ### Deployment Strategy:
 - **Kubernetes Cluster**: Hosted on a cloud provider (AWS/GCloud/Azure) to ensure scalability.
